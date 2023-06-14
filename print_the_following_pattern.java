@@ -8,7 +8,10 @@ public static void main(String args[]){
     {
         for(int j=1;j<=a;j++)
         {
-            System.out.format("%c ",i+64);
+            if(i==j || j==a-i+1)
+            System.out.print("x");
+            else
+            System.out.print("0");
             
         }
         System.out.println();
