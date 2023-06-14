@@ -6,9 +6,13 @@ public static void main(String args[]){
     a=s.nextInt();
     for(int i=1;i<=a;i++)
     {
-        for(int j=i;j<=a;j++)
+        for(int j=1;j<=a;j++)
         {
-            System.out.print(j+" ");
+            if(i==j || j==a-i+1)
+            System.out.format("%d ",a-i+1);
+             else
+             System.out.print(" ");
+            
         }
         System.out.println();
     }
