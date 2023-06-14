@@ -6,9 +6,10 @@ public static void main(String args[]){
     a=s.nextInt();
     for(int i=1;i<=a;i++)
     {
-        for(int j=1;j<=a-i+1;j++)
+        for(int j=1;j<=a;j++)
         {
-            System.out.print(j);
+            System.out.format("%c ",i+64);
+            
         }
         System.out.println();
     }
