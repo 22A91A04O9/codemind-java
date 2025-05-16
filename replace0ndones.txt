@@ -1,0 +1,10 @@
+class Solution {
+    public int convertfive(int n) {
+        boolean isNegative = n < 0;
+        n = Math.abs(n);
+        String numStr = String.valueOf(n).replace('0', '5');
+        int result = Integer.parseInt(numStr);
+
+        return isNegative ? -result : result;
+    }
+}
